@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     34830,        735]
-NotebookOptionsPosition[     33898,        703]
-NotebookOutlinePosition[     34655,        730]
-CellTagsIndexPosition[     34581,        725]
+NotebookDataLength[     35106,        740]
+NotebookOptionsPosition[     34119,        706]
+NotebookOutlinePosition[     34905,        734]
+CellTagsIndexPosition[     34831,        729]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -289,8 +289,8 @@ Configurations\>\"", ",", "\[IndentingNewLine]",
                RowBox[{"Dynamic", "@", "MeshRefineFactor"}], ",", 
                RowBox[{"{", 
                 RowBox[{
-                "0.05", ",", "0.1", ",", "0.2", ",", "0.5", ",", "1", ",", 
-                 "2", ",", "5"}], "}"}]}], "]"}], ",", 
+                "0.01", ",", "0.02", ",", "0.05", ",", "0.1", ",", "0.2", ",",
+                  "0.5", ",", "1", ",", "2"}], "}"}]}], "]"}], ",", 
              RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}], ",", " ", 
            RowBox[{"Dynamic", "[", "MeshRefineFactor", "]"}]}], "}"}], 
          "\[IndentingNewLine]", ",", 
@@ -386,8 +386,9 @@ Configurations.\>\"", "]"}], ";"}], "\[IndentingNewLine]", ",",
    RowBox[{"ContinuousAction", "\[Rule]", "False"}], ",", 
    RowBox[{"LocalizeVariables", "\[Rule]", "True"}]}], "\[IndentingNewLine]", 
   "]"}]}], "Input",
- ShowCellBracket->True,
- CellOpen->True,
+ ShowCellBracket->False,
+ CellOpen->False,
+ InitializationCell->True,
  CellChangeTimes->{
   3.7772212306283407`*^9, {3.7772212790657387`*^9, 3.777221285037827*^9}, {
    3.777221360148245*^9, 3.7772213934349422`*^9}, {3.777225555671623*^9, 
@@ -471,21 +472,19 @@ Configurations.\>\"", "]"}], ";"}], "\[IndentingNewLine]", ",",
    3.797617354500523*^9}, {3.797617482157632*^9, 3.7976175124674273`*^9}, 
    3.7976175811783247`*^9, {3.797617633962377*^9, 3.797617635485965*^9}, {
    3.797624202460401*^9, 3.797624270779847*^9}, {3.797624432714377*^9, 
-   3.797624435798129*^9}},
+   3.797624435798129*^9}, {3.797624756060416*^9, 3.7976247661380873`*^9}},
  Background->GrayLevel[1],
- CellTags->
-  "Subroutines",ExpressionUUID->"53a05a53-bebd-41d8-a437-67f0abca7cf6"],
+ CellTags->"Subroutines",
+ CellLabel->"In[1]:=",ExpressionUUID->"53a05a53-bebd-41d8-a437-67f0abca7cf6"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`NoBeads$$ = 2, $CellContext`NoConfgs$$ = 
-    6, $CellContext`WorkDir$$ = 
-    "/Users/wenqiangfang/Dropbox \
-(Brown)/research/HCP_Forces/Meeting_April/ExampleData/20190909Set1/", 
-    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
-    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
-    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+   DynamicModuleBox[{$CellContext`NoBeads$$ = 0, $CellContext`NoConfgs$$ = 
+    0, $CellContext`WorkDir$$ = "Null", Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`WorkDir$$], "Null"}, 0}, {{
        Hold[$CellContext`NoBeads$$], 0}, 0}, {{
        Hold[$CellContext`NoConfgs$$], 0}, 0}, {
@@ -495,8 +494,8 @@ Cell[BoxData[
          "Time", $CellContext`PtcList, $CellContext`PtcNo, \
 $CellContext`PtcName, $CellContext`GDirR, $CellContext`GDirD, \
 $CellContext`MeshRefineFactor = 
-         0.2, $CellContext`rList = {}, $CellContext`Vol2List = {}, \
-$CellContext`Vol1List = {}, $CellContext`AvgPrBdList = {}, \
+         0.05, $CellContext`rList = {}, $CellContext`Vol2List = {}, \
+$CellContext`Vol1List = {}, $CellContext`AvgBdList = {}, \
 $CellContext`EEDensityList = {}, $CellContext`EEList = {}, $CellContext`outf = 
          Null}, 
         Grid[{{
@@ -522,6 +521,7 @@ $CellContext`EEDensityList = {}, $CellContext`EEList = {}, $CellContext`outf =
               Or[$CellContext`WorkDir$$ === $Canceled, $CellContext`WorkDir$$ === 
                "Null"], $CellContext`CenterMessageDialog[
                "Please Choose working directory of the project."]; 
+              
               Null, {$CellContext`PtcList, $CellContext`PtcNo, \
 $CellContext`PtcName} = 
                HCMP`Child[$CellContext`WorkDir$$, $CellContext`ParticlePre]; \
@@ -536,16 +536,17 @@ $CellContext`TimePre]; {$CellContext`NoBeads$$, $CellContext`NoConfgs$$} = {
            Item[
             PopupMenu[
              Dynamic[$CellContext`MeshRefineFactor], {
-             0.05, 0.1, 0.2, 0.5, 1, 2, 5}], Alignment -> Left], 
+             0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2}], Alignment -> Left], 
            Dynamic[$CellContext`MeshRefineFactor]}, {
            Button["Perform Finite Element Calculation", If[
               
               Or[$CellContext`NoBeads$$ === 0, $CellContext`NoConfgs$$ === 
                0], $CellContext`CenterMessageDialog[
                "Please Calculate the Number of Beads and Deformed \
-Configurations."]; 
-              Null, {$CellContext`rList, $CellContext`Vol2List, \
-$CellContext`Vol1List, $CellContext`AvgPrBdList, $CellContext`EEDensityList, \
+Configurations."]; Null, 
+              ParallelEvaluate[$HistoryLength = 
+                0]; {$CellContext`rList, $CellContext`Vol2List, \
+$CellContext`Vol1List, $CellContext`AvgBdList, $CellContext`EEDensityList, \
 $CellContext`EEList} = 
                HCMP`FEMAll[$CellContext`GDirR, $CellContext`GDirD, \
 $CellContext`NoBeads$$, $CellContext`MeshRefineFactor]; \
@@ -561,14 +562,14 @@ $CellContext`CenterMessageDialog["Finite Element Calculation is done."];
                  FileNameJoin[{$CellContext`WorkDir$$, "ResultSheet.xls"}]]; 
               HCMP`OutExcel[$CellContext`outf, $CellContext`NoBeads$$, \
 $CellContext`PtcName, $CellContext`GDirD, $CellContext`rList, \
-$CellContext`Vol2List, $CellContext`Vol1List, $CellContext`AvgPrBdList, \
+$CellContext`Vol2List, $CellContext`Vol1List, $CellContext`AvgBdList, \
 $CellContext`EEDensityList, $CellContext`EEList]; 
               SystemOpen[$CellContext`outf]; Null]; Null, Method -> "Queued", 
             ImageSize -> 300], SpanFromLeft, SpanFromLeft}}, 
          Spacings -> {1, {0.8, 2 -> 2}}, Alignment -> Center, 
          BaseStyle -> {FontSize -> 13, FontFamily -> "Helvetica"}], 
         DynamicModuleValues :> {}]], Manipulate`Dump`ThisIsNotAControl}}, 
-    Typeset`size$$ = {450., {53., 59.}}, Typeset`update$$ = 0, 
+    Typeset`size$$ = {450., {35., 40.}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
@@ -596,8 +597,8 @@ $CellContext`EEDensityList, $CellContext`EEList];
           "Time", $CellContext`PtcList, $CellContext`PtcNo, \
 $CellContext`PtcName, $CellContext`GDirR, $CellContext`GDirD, \
 $CellContext`MeshRefineFactor = 
-          0.2, $CellContext`rList = {}, $CellContext`Vol2List = {}, \
-$CellContext`Vol1List = {}, $CellContext`AvgPrBdList = {}, \
+          0.05, $CellContext`rList = {}, $CellContext`Vol2List = {}, \
+$CellContext`Vol1List = {}, $CellContext`AvgBdList = {}, \
 $CellContext`EEDensityList = {}, $CellContext`EEList = {}, $CellContext`outf = 
           Null}, 
          Grid[{{
@@ -637,16 +638,17 @@ $CellContext`TimePre]; {$CellContext`NoBeads$$, $CellContext`NoConfgs$$} = {
             Item[
              PopupMenu[
               Dynamic[$CellContext`MeshRefineFactor], {
-              0.05, 0.1, 0.2, 0.5, 1, 2, 5}], Alignment -> Left], 
+              0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2}], Alignment -> Left], 
             Dynamic[$CellContext`MeshRefineFactor]}, {
             Button["Perform Finite Element Calculation", If[
                
                Or[$CellContext`NoBeads$$ === 0, $CellContext`NoConfgs$$ === 
                 0], $CellContext`CenterMessageDialog[
                 "Please Calculate the Number of Beads and Deformed \
-Configurations."]; 
-               Null, {$CellContext`rList, $CellContext`Vol2List, \
-$CellContext`Vol1List, $CellContext`AvgPrBdList, $CellContext`EEDensityList, \
+Configurations."]; Null, 
+               ParallelEvaluate[$HistoryLength = 
+                 0]; {$CellContext`rList, $CellContext`Vol2List, \
+$CellContext`Vol1List, $CellContext`AvgBdList, $CellContext`EEDensityList, \
 $CellContext`EEList} = 
                 HCMP`FEMAll[$CellContext`GDirR, $CellContext`GDirD, \
 $CellContext`NoBeads$$, $CellContext`MeshRefineFactor]; \
@@ -662,7 +664,7 @@ $CellContext`CenterMessageDialog["Finite Element Calculation is done."];
                   FileNameJoin[{$CellContext`WorkDir$$, "ResultSheet.xls"}]]; 
                HCMP`OutExcel[$CellContext`outf, $CellContext`NoBeads$$, \
 $CellContext`PtcName, $CellContext`GDirD, $CellContext`rList, \
-$CellContext`Vol2List, $CellContext`Vol1List, $CellContext`AvgPrBdList, \
+$CellContext`Vol2List, $CellContext`Vol1List, $CellContext`AvgBdList, \
 $CellContext`EEDensityList, $CellContext`EEList]; 
                SystemOpen[$CellContext`outf]; Null]; Null, Method -> "Queued",
               ImageSize -> 300], SpanFromLeft, SpanFromLeft}}, 
@@ -671,7 +673,7 @@ $CellContext`EEDensityList, $CellContext`EEList];
          DynamicModuleValues :> {}]}, 
       "Options" :> {ContinuousAction -> False, LocalizeVariables -> True}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{495., {228., 234.}},
+     ImageSizeCache->{495., {209., 215.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -696,14 +698,15 @@ $CellContext`EEDensityList, $CellContext`EEList];
    3.7958730092852163`*^9, 3.795873025681429*^9}, {3.7958733763134336`*^9, 
    3.7958733773763323`*^9}, 3.797003416230397*^9, {3.797003452706653*^9, 
    3.797003479599972*^9}, 3.7976162727465477`*^9, 3.797616417902067*^9, 
-   3.7976172590004053`*^9},
+   3.7976172590004053`*^9, 3.7976246306557493`*^9, 3.797624703695953*^9, 
+   3.797625159082967*^9},
  CellTags->"Subroutines",
- CellLabel->"Out[5]=",ExpressionUUID->"d45fc472-3707-4ebc-ab05-657139418393"]
+ CellLabel->"Out[9]=",ExpressionUUID->"00fdb915-b85e-49e6-af5e-86b3624314e2"]
 }, Open  ]]
 },
 InitializationCellEvaluation->True,
 InitializationCellWarning->False,
-WindowSize->{960, 1035},
+WindowSize->{1920, 1035},
 WindowMargins->{{Automatic, -278}, {753, Automatic}},
 FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->"Default.nb"
@@ -714,26 +717,28 @@ StyleDefinitions->"Default.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "Subroutines"->{
-  Cell[580, 22, 21386, 454, 1627, "Input",ExpressionUUID->"53a05a53-bebd-41d8-a437-67f0abca7cf6",
-   CellOpen->True,
+  Cell[580, 22, 21499, 455, 19, "Input",ExpressionUUID->"53a05a53-bebd-41d8-a437-67f0abca7cf6",
+   CellOpen->False,
+   InitializationCell->True,
    CellTags->"Subroutines"],
-  Cell[21969, 478, 11913, 222, 481, "Output",ExpressionUUID->"d45fc472-3707-4ebc-ab05-657139418393",
+  Cell[22082, 479, 12021, 224, 477, "Output",ExpressionUUID->"00fdb915-b85e-49e6-af5e-86b3624314e2",
    CellOpen->True,
    CellTags->"Subroutines"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Subroutines", 34262, 715}
+ {"Subroutines", 34484, 718}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 21386, 454, 1627, "Input",ExpressionUUID->"53a05a53-bebd-41d8-a437-67f0abca7cf6",
- CellOpen->True,
+Cell[580, 22, 21499, 455, 19, "Input",ExpressionUUID->"53a05a53-bebd-41d8-a437-67f0abca7cf6",
+ CellOpen->False,
+ InitializationCell->True,
  CellTags->"Subroutines"],
-Cell[21969, 478, 11913, 222, 481, "Output",ExpressionUUID->"d45fc472-3707-4ebc-ab05-657139418393",
+Cell[22082, 479, 12021, 224, 477, "Output",ExpressionUUID->"00fdb915-b85e-49e6-af5e-86b3624314e2",
  CellOpen->True,
  CellTags->"Subroutines"]
 }, Open  ]]
