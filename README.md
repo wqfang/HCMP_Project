@@ -17,10 +17,13 @@ After May 5 2020 meeting, we are going add following features to the GUIs:
 
 ## HCMP_GUI.nb
 
-__HCMP_GUI.nb__ works on one pair of HCMP configurations. It will plot the point cloud and fitting surface of both one non-deformed HCMP and one deformed HCMP. By using the linear theory of elasticity, the HCMP¡¯s stress field is determined through finite element analysis. 
-It will plot the traction vectors on the deformed configuration of the HCMP¡¯s surface. The normal component of the traction vector (normal traction component) at a large number of HCMP surface points are recorded. The distributions of the normal traction component data will be shown as colormap on the deformed configuration of the HCMP¡¯s surface as well as a histogram plot. Radius, volume, average pressures (one third the trace of the stress tensor), elastic energy density and total elastic energy stored within the HCMP
+__HCMP_GUI.nb__ works on one pair of HCMP configurations. It will plot the point cloud and fitting surface of both one non-deformed HCMP and one deformed HCMP. By using the linear theory of elasticity, the HCMP's stress field is determined through finite element analysis. 
+It will plot the traction vectors on the deformed configuration of the HCMP's surface. The normal component of the traction vector (normal traction component) at a large number of HCMP surface points are recorded. The distributions of the normal traction component data will be shown as colormap on the deformed configuration of the HCMP's surface as well as a histogram plot. Radius, volume, average pressures (one third the trace of the stress tensor), elastic energy density and total elastic energy stored within the HCMP
 will be calculated.
 
+### how to use HCMP_GUI.nb
+
+You need to click all buttons from top to bottom, from left to right. The directory for both reference and deformed configuration should contain z-stack images of the same HCMP.
 
 ## ParallelProcessing_GUI.nb
 
