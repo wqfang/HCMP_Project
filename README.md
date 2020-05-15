@@ -10,7 +10,7 @@ You can simply download and run it. You will find instructions on the usage of t
 ## Log
 
 After May 5 2020 meeting, we had made the following changes:
-1. Add Number of sample points for the Normal traction component histogram as an extra parameter (__HCMP_GUI.nb__).
+1. Add Number of sample points for the Normal traction component histogram as an extra parameter (May 14, __HCMP_GUI.nb__).
 
 
 ## Future plan
