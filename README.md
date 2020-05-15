@@ -7,11 +7,17 @@ In the `GUI` folder, there are two Mathematica Notebooks:
 
 You can simply download and run it. You will find instructions on the usage of the GUIs in `document/instruction.pdf`. 
 
+## Log
+
+After May 5 2020 meeting, we had made the following changes:
+1. Add Number of sample points for the Normal traction component histogram as an extra parameter (__HCMP_GUI.nb__).
+
+
 ## Future plan
 
 After May 5 2020 meeting, we are going add following features to the GUIs:
-1. Add Number of sample points for the Normal traction component histogram as an extra parameter (__HCMP_GUI.nb__).
-2. Add computational time approximation (__ParallelProcessing_GUI.nb__)
+
+1. Add computational time approximation (__ParallelProcessing_GUI.nb__)
 2. Add parameter palette for user-defined parameters (__ParallelProcessing_GUI.nb__)
 
 
