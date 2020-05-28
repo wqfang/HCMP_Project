@@ -10,8 +10,11 @@ You can simply download and run it. You will find instructions on the usage of t
 ## Log
 
 After May 5 2020 meeting, we had made the following changes:
-1. Add Number of sample points for the Normal traction component histogram as an extra parameter (May 14, __HCMP_GUI.nb__).
-
+1. Add Number of sample points for the Normal traction component histogram as an extra parameter (May 14, 2020, __HCMP_GUI.nb__).
+2. Change the name schemes for image files to either of the following two formats (May 28, 2020, `HCMP.wl`)
+    * `Bead1Time1Slice (1)`
+    * `ColHCMP_7daySpheroid_TCourse_Particle9Time15Slice (1)`
+3. Changed the image file names in the `ExampleData` folder. (May 28,2020)
 
 ## Future plan
 
