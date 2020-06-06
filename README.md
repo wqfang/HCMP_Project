@@ -15,13 +15,14 @@ After May 5 2020 meeting, we had made the following changes:
     * `Bead1Time1Slice (1)`
     * `ColHCMP_7daySpheroid_TCourse_Particle9Time15Slice (1)`
 3. Changed the image file names in the `ExampleData` folder. (May 28,2020)
+4. Add parameter palette for user-defined parameters in __ParallelProcessing_GUI.nb__ (Jun 5, 2020)
+
 
 ## Future plan
 
 After May 5 2020 meeting, we are going add following features to the GUIs:
 
 1. Add computational time approximation (__ParallelProcessing_GUI.nb__)
-2. Add parameter palette for user-defined parameters (__ParallelProcessing_GUI.nb__)
 
 
 ## HCMP_GUI.nb
