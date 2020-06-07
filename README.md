@@ -23,7 +23,7 @@ After May 5 2020 meeting, we had made the following changes:
 After May 5 2020 meeting, we are going add following features to the GUIs:
 
 1. Add computational time approximation (__ParallelProcessing_GUI.nb__)
-
+2. Try to aviod the effects of `thumbs.db` and `.DS_Store` (__ParallelProcessing_GUI.nb__)
 
 ## HCMP_GUI.nb
 
