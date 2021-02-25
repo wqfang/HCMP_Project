@@ -25,9 +25,6 @@ After it is finished, you need to launch the installation package and it will sh
 
 When this is done, you can drag the Wolfram Player icon to the Applications folder to complete installation.
 
-
-
-
 ## Log
 
 After May 5 2020 meeting, we had made the following changes:
