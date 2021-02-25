@@ -23,10 +23,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[      1064,         20]
-NotebookDataLength[     25105,        463]
-NotebookOptionsPosition[     25009,        443]
-NotebookOutlinePosition[     25829,        471]
-CellTagsIndexPosition[     25755,        466]
+NotebookDataLength[     24864,        462]
+NotebookOptionsPosition[     24524,        438]
+NotebookOutlinePosition[     25466,        468]
+CellTagsIndexPosition[     25392,        463]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -127,36 +127,36 @@ wl\>\"", "]"}]}]], "Input",
    3.797624202460401*^9, 3.797624270779847*^9}, {3.797624432714377*^9, 
    3.797624435798129*^9}, {3.797624756060416*^9, 3.7976247661380873`*^9}, {
    3.797767441988985*^9, 3.7977674883002357`*^9}, {3.797767559408841*^9, 
-   3.797767560037642*^9}, {3.823277412783496*^9, 3.8232774129011593`*^9}},
+   3.797767560037642*^9}, {3.823278253029213*^9, 3.8232782531206827`*^9}},
  Background->GrayLevel[1],
- CellTags->
-  "Subroutines",ExpressionUUID->"8841a066-2333-45df-a981-fcca830a398c"],
+ CellTags->"Subroutines",
+ CellLabel->"In[6]:=",ExpressionUUID->"8841a066-2333-45df-a981-fcca830a398c"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`NoBeads$$ = 0, $CellContext`NoConfgs$$ = 
-    0, $CellContext`WorkDir$$ = "Null", Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
-    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
-    "\"untitled\"", Typeset`specs$$ = {{{
+   DynamicModuleBox[{$CellContext`NoBeads$$ = 12, $CellContext`NoConfgs$$ = 
+    155, $CellContext`WorkDir$$ = 
+    "/Users/wenqiangfang/Dropbox \
+(Brown)/Research/HCP_Forces/GitRepo/HCMP_Project/ExampleData_2D/", 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`WorkDir$$], "Null"}, 0}, {{
        Hold[$CellContext`NoBeads$$], 0}, 0}, {{
        Hold[$CellContext`NoConfgs$$], 0}, 0}, {
       Hold[
-       DynamicModule[{$CellContext`ParticlePre = 
-         "Particle", $CellContext`TimePre = 
-         "Time", $CellContext`PtcList, $CellContext`PtcNo, \
+       DynamicModule[{$CellContext`ParticlePre = "Bead", $CellContext`TimePre = 
+         "Sk", $CellContext`PtcList, $CellContext`PtcNo, \
 $CellContext`PtcName, $CellContext`GDirR, $CellContext`GDirD, \
 $CellContext`rList = {}, $CellContext`Vol2List = {}, $CellContext`Vol1List = \
 {}, $CellContext`AvgBdList = {}, $CellContext`EEDensityList = {}, \
 $CellContext`EEList = {}, $CellContext`outf = Null, $CellContext`BT = 
-         0.06, $CellContext`ES = 10, $CellContext`Y0 = 
-         262., $CellContext`\[Nu]0 = 0.443, $CellContext`MeshRefineFactor = 
-         1}, 
+         0.1, $CellContext`ES = 10, $CellContext`Y0 = 
+         262., $CellContext`\[Nu]0 = 0.443}, 
         Grid[{{
-           Style["Parallel processing of massive data set", 20], SpanFromLeft,
-            SpanFromLeft}, {
+           Style["Parallel processing of massive 2D Projection Images", 20], 
+           SpanFromLeft, SpanFromLeft}, {
            Button[
            "Choose working directory of the project", $CellContext`WorkDir$$ = 
              SystemDialogInput[
@@ -167,13 +167,12 @@ $CellContext`EEList = {}, $CellContext`outf = Null, $CellContext`BT =
            InputField[
             Dynamic[$CellContext`ParticlePre], String], 
            Dynamic[$CellContext`ParticlePre]}, {
-           Item["Prefix for Time folders", Alignment -> Right], 
+           Item["Prefix for Time", Alignment -> Right], 
            InputField[
             Dynamic[$CellContext`TimePre], String], 
            Dynamic[$CellContext`TimePre]}, {
            Button[
            "Calculate the Number of Beads and Deformed Configurations", If[
-              
               Or[$CellContext`WorkDir$$ === $Canceled, $CellContext`WorkDir$$ === 
                "Null"], $CellContext`CenterMessageDialog[
                "Please Choose working directory of the project."]; 
@@ -187,7 +186,7 @@ $CellContext`TimePre]; {$CellContext`NoBeads$$, $CellContext`NoConfgs$$} = {
                  Total[
                   Map[Length, $CellContext`GDirD]]}; Null]; Null, Method -> 
             "Queued", ImageSize -> 400], SpanFromLeft, SpanFromLeft}, {
-           Button["Perform Finite Element Calculation", If[
+           Button["Perform 2D Calculation", If[
               
               Or[$CellContext`NoBeads$$ === 0, $CellContext`NoConfgs$$ === 
                0], $CellContext`CenterMessageDialog[
@@ -197,17 +196,16 @@ Configurations."]; Null,
                 0]; {$CellContext`rList, $CellContext`Vol2List, \
 $CellContext`Vol1List, $CellContext`AvgBdList, $CellContext`EEDensityList, \
 $CellContext`EEList} = 
-               HCMP`FEMAll[$CellContext`GDirR, $CellContext`GDirD, \
+               HCMP`Calc2D[$CellContext`GDirR, $CellContext`GDirD, \
 $CellContext`NoBeads$$, $CellContext`BT, $CellContext`ES, $CellContext`Y0, \
-$CellContext`\[Nu]0, $CellContext`MeshRefineFactor]; \
-$CellContext`CenterMessageDialog["Finite Element Calculation is done."]; 
-              Null]; Null, Method -> "Queued", ImageSize -> 300], 
-           SpanFromLeft, SpanFromLeft}, {
+$CellContext`\[Nu]0]; $CellContext`CenterMessageDialog[
+               "2D Calculation is done."]; Null]; Null, Method -> "Queued", 
+            ImageSize -> 300], SpanFromLeft, SpanFromLeft}, {
            Button[
            "Output Results to Excel", 
             If[$CellContext`rList === 
               0, $CellContext`CenterMessageDialog[
-               "Please Perform Finite Element Calculation."]; 
+               "Please Perform 2D Calculation."]; 
               Null, $CellContext`outf = SystemDialogInput["FileSave", 
                  FileNameJoin[{$CellContext`WorkDir$$, "ResultSheet.xls"}]]; 
               HCMP`OutExcel[$CellContext`outf, $CellContext`NoBeads$$, \
@@ -235,8 +233,8 @@ $CellContext`EEDensityList, $CellContext`EEList];
                     Slider[
                     Dynamic[$CellContext`ES], {2, 20}], 
                     Dynamic[$CellContext`ES]}, {
-                    Style["For Finite Element Calculation:", Bold], 
-                    SpanFromLeft, SpanFromLeft}, {
+                    Style["For 2D Calculation:", Bold], SpanFromLeft, 
+                    SpanFromLeft}, {
                     Item["Young's modulus (Pa)", Alignment -> Right], 
                     InputField[
                     Dynamic[$CellContext`Y0], Number], 
@@ -245,22 +243,16 @@ $CellContext`EEDensityList, $CellContext`EEList];
                     InputField[
                     Dynamic[$CellContext`\[Nu]0], Number], 
                     Dynamic[$CellContext`\[Nu]0]}, {
-                    Item["Mesh Refine Factor", Alignment -> Right], 
-                    PopupMenu[
-                    Dynamic[$CellContext`MeshRefineFactor], {
-                    0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2}], 
-                    Dynamic[$CellContext`MeshRefineFactor]}, {
                     Button[
                     "Reset All Parameters to Default Value", $CellContext`BT = 
                     0.06; $CellContext`ES = 10; $CellContext`Y0 = 
-                    262; $CellContext`\[Nu]0 = 
-                    0.443; $CellContext`MeshRefineFactor = 1; Null, Method -> 
+                    262; $CellContext`\[Nu]0 = 0.443; Null, Method -> 
                     "Queued"], SpanFromLeft, SpanFromLeft}}, Alignment -> 
                    Left, BaseStyle -> {
                     FontSize -> 13, FontFamily -> "Helvetica"}, 
-                   Spacings -> {2, {4 -> 2, 8 -> 2, 14 -> 2, 16 -> 2}}], 
-                  FrameMargins -> 14, ImageSize -> {550, 350}], 
-                 NotebookDynamicExpression :> Refresh[
+                   Spacings -> {2, {4 -> 2, 7 -> 2}}], FrameMargins -> 14, 
+                  ImageSize -> {550, 250}], NotebookDynamicExpression :> 
+                 Refresh[
                    SetOptions[
                     EvaluationNotebook[], 
                     WindowMargins -> $CellContext`parentCenter$ - 
@@ -272,7 +264,7 @@ $CellContext`EEDensityList, $CellContext`EEList];
          Spacings -> {1, {0.8, 2 -> 2}}, Alignment -> Center, 
          BaseStyle -> {FontSize -> 13, FontFamily -> "Helvetica"}], 
         DynamicModuleValues :> {}]], Manipulate`Dump`ThisIsNotAControl}}, 
-    Typeset`size$$ = {450., {35., 40.}}, Typeset`update$$ = 0, 
+    Typeset`size$$ = {450., {53., 59.}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
@@ -296,17 +288,16 @@ $CellContext`EEDensityList, $CellContext`EEList];
          None}, {{$CellContext`NoBeads$$, 0}, 0, ControlType -> 
          None}, {{$CellContext`NoConfgs$$, 0}, 0, ControlType -> None}, 
         DynamicModule[{$CellContext`ParticlePre = 
-          "Particle", $CellContext`TimePre = 
-          "Time", $CellContext`PtcList, $CellContext`PtcNo, \
+          "Bead", $CellContext`TimePre = 
+          "Sk", $CellContext`PtcList, $CellContext`PtcNo, \
 $CellContext`PtcName, $CellContext`GDirR, $CellContext`GDirD, \
 $CellContext`rList = {}, $CellContext`Vol2List = {}, $CellContext`Vol1List = \
 {}, $CellContext`AvgBdList = {}, $CellContext`EEDensityList = {}, \
 $CellContext`EEList = {}, $CellContext`outf = Null, $CellContext`BT = 
-          0.06, $CellContext`ES = 10, $CellContext`Y0 = 
-          262., $CellContext`\[Nu]0 = 0.443, $CellContext`MeshRefineFactor = 
-          1}, 
+          0.1, $CellContext`ES = 10, $CellContext`Y0 = 
+          262., $CellContext`\[Nu]0 = 0.443}, 
          Grid[{{
-            Style["Parallel processing of massive data set", 20], 
+            Style["Parallel processing of massive 2D Projection Images", 20], 
             SpanFromLeft, SpanFromLeft}, {
             Button[
             "Choose working directory of the project", $CellContext`WorkDir$$ = 
@@ -318,7 +309,7 @@ $CellContext`EEList = {}, $CellContext`outf = Null, $CellContext`BT =
             InputField[
              Dynamic[$CellContext`ParticlePre], String], 
             Dynamic[$CellContext`ParticlePre]}, {
-            Item["Prefix for Time folders", Alignment -> Right], 
+            Item["Prefix for Time", Alignment -> Right], 
             InputField[
              Dynamic[$CellContext`TimePre], String], 
             Dynamic[$CellContext`TimePre]}, {
@@ -338,7 +329,7 @@ $CellContext`TimePre]; {$CellContext`NoBeads$$, $CellContext`NoConfgs$$} = {
                   Total[
                    Map[Length, $CellContext`GDirD]]}; Null]; Null, Method -> 
              "Queued", ImageSize -> 400], SpanFromLeft, SpanFromLeft}, {
-            Button["Perform Finite Element Calculation", If[
+            Button["Perform 2D Calculation", If[
                
                Or[$CellContext`NoBeads$$ === 0, $CellContext`NoConfgs$$ === 
                 0], $CellContext`CenterMessageDialog[
@@ -348,17 +339,16 @@ Configurations."]; Null,
                  0]; {$CellContext`rList, $CellContext`Vol2List, \
 $CellContext`Vol1List, $CellContext`AvgBdList, $CellContext`EEDensityList, \
 $CellContext`EEList} = 
-                HCMP`FEMAll[$CellContext`GDirR, $CellContext`GDirD, \
+                HCMP`Calc2D[$CellContext`GDirR, $CellContext`GDirD, \
 $CellContext`NoBeads$$, $CellContext`BT, $CellContext`ES, $CellContext`Y0, \
-$CellContext`\[Nu]0, $CellContext`MeshRefineFactor]; \
-$CellContext`CenterMessageDialog["Finite Element Calculation is done."]; 
-               Null]; Null, Method -> "Queued", ImageSize -> 300], 
-            SpanFromLeft, SpanFromLeft}, {
+$CellContext`\[Nu]0]; $CellContext`CenterMessageDialog[
+                "2D Calculation is done."]; Null]; Null, Method -> "Queued", 
+             ImageSize -> 300], SpanFromLeft, SpanFromLeft}, {
             Button[
             "Output Results to Excel", 
              If[$CellContext`rList === 
                0, $CellContext`CenterMessageDialog[
-                "Please Perform Finite Element Calculation."]; 
+                "Please Perform 2D Calculation."]; 
                Null, $CellContext`outf = SystemDialogInput["FileSave", 
                   FileNameJoin[{$CellContext`WorkDir$$, "ResultSheet.xls"}]]; 
                HCMP`OutExcel[$CellContext`outf, $CellContext`NoBeads$$, \
@@ -386,8 +376,8 @@ $CellContext`EEDensityList, $CellContext`EEList];
                     Slider[
                     Dynamic[$CellContext`ES], {2, 20}], 
                     Dynamic[$CellContext`ES]}, {
-                    Style["For Finite Element Calculation:", Bold], 
-                    SpanFromLeft, SpanFromLeft}, {
+                    Style["For 2D Calculation:", Bold], SpanFromLeft, 
+                    SpanFromLeft}, {
                     Item["Young's modulus (Pa)", Alignment -> Right], 
                     InputField[
                     Dynamic[$CellContext`Y0], Number], 
@@ -396,22 +386,16 @@ $CellContext`EEDensityList, $CellContext`EEList];
                     InputField[
                     Dynamic[$CellContext`\[Nu]0], Number], 
                     Dynamic[$CellContext`\[Nu]0]}, {
-                    Item["Mesh Refine Factor", Alignment -> Right], 
-                    PopupMenu[
-                    Dynamic[$CellContext`MeshRefineFactor], {
-                    0.01, 0.02, 0.05, 0.1, 0.2, 0.5, 1, 2}], 
-                    Dynamic[$CellContext`MeshRefineFactor]}, {
                     Button[
                     "Reset All Parameters to Default Value", $CellContext`BT = 
                     0.06; $CellContext`ES = 10; $CellContext`Y0 = 
-                    262; $CellContext`\[Nu]0 = 
-                    0.443; $CellContext`MeshRefineFactor = 1; Null, Method -> 
+                    262; $CellContext`\[Nu]0 = 0.443; Null, Method -> 
                     "Queued"], SpanFromLeft, SpanFromLeft}}, Alignment -> 
                     Left, BaseStyle -> {
                     FontSize -> 13, FontFamily -> "Helvetica"}, 
-                    Spacings -> {2, {4 -> 2, 8 -> 2, 14 -> 2, 16 -> 2}}], 
-                   FrameMargins -> 14, ImageSize -> {550, 350}], 
-                  NotebookDynamicExpression :> Refresh[
+                    Spacings -> {2, {4 -> 2, 7 -> 2}}], FrameMargins -> 14, 
+                   ImageSize -> {550, 250}], NotebookDynamicExpression :> 
+                  Refresh[
                     SetOptions[
                     EvaluationNotebook[], 
                     WindowMargins -> $CellContext`parentCenter$ - 
@@ -425,7 +409,7 @@ $CellContext`EEDensityList, $CellContext`EEList];
          DynamicModuleValues :> {}]}, 
       "Options" :> {ContinuousAction -> False, LocalizeVariables -> True}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{495., {211., 217.}},
+     ImageSizeCache->{495., {230., 236.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -436,18 +420,29 @@ $CellContext`EEDensityList, $CellContext`EEList];
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.800788000039022*^9, 3.8232774004845552`*^9},
+ CellChangeTimes->{3.800788000039022*^9, 3.823278240253126*^9, 
+  3.823278285585541*^9},
  CellTags->"Subroutines",
- CellLabel->"Out[24]=",ExpressionUUID->"87e85a5f-d437-4b49-8d7e-fe79e3d447dd"]
+ CellLabel->"Out[6]=",ExpressionUUID->"b0a656d3-de4f-4fa3-8493-8c0f15f00c8c"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Export", "chtype", 
+   "\"First argument \\!\\(\\*RowBox[{\\\"$Canceled\\\"}]\\) is not a valid \
+file specification.\"", 2, 7, 2, 33178579249670017132, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.823278312540577*^9},
+ CellTags->"Subroutines",
+ CellLabel->"",ExpressionUUID->"f04d1c6c-bc5b-4fb2-b8bf-61e3f7344b85"]
 }, Open  ]]
 },
 InitializationCellEvaluation->True,
 InitializationCellWarning->False,
-WindowSize->{1280, 688},
-WindowMargins->{{32, Automatic}, {Automatic, -871}},
+WindowSize->{1280, 687},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (March 18, 2020)",
 StyleDefinitions->"Default.nb",
-ExpressionUUID->"66afa638-7095-48eb-9583-4fdfc7cad9c8"
+ExpressionUUID->"9c83f0f0-d63e-4ad5-afe0-f163c799078a"
 ]
 (* End of Notebook Content *)
 
@@ -455,33 +450,35 @@ ExpressionUUID->"66afa638-7095-48eb-9583-4fdfc7cad9c8"
 (*CellTagsOutline
 CellTagsIndex->{
  "Subroutines"->{
-  Cell[1486, 35, 6686, 97, 19, "Input",ExpressionUUID->"8841a066-2333-45df-a981-fcca830a398c",
+  Cell[1486, 35, 6706, 97, 19, "Input",ExpressionUUID->"8841a066-2333-45df-a981-fcca830a398c",
    CellOpen->False,
    InitializationCell->True,
    CellTags->"Subroutines"],
-  Cell[8175, 134, 16818, 306, 470, "Output",ExpressionUUID->"87e85a5f-d437-4b49-8d7e-fe79e3d447dd",
+  Cell[8195, 134, 15936, 291, 508, "Output",ExpressionUUID->"b0a656d3-de4f-4fa3-8493-8c0f15f00c8c",
+   CellTags->"Subroutines"],
+  Cell[24134, 427, 374, 8, 24, "Message",ExpressionUUID->"f04d1c6c-bc5b-4fb2-b8bf-61e3f7344b85",
    CellTags->"Subroutines"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Subroutines", 25429, 456}
+ {"Subroutines", 24940, 451}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[1486, 35, 6686, 97, 19, "Input",ExpressionUUID->"8841a066-2333-45df-a981-fcca830a398c",
+Cell[1486, 35, 6706, 97, 19, "Input",ExpressionUUID->"8841a066-2333-45df-a981-fcca830a398c",
  CellOpen->False,
  InitializationCell->True,
  CellTags->"Subroutines"],
-Cell[8175, 134, 16818, 306, 470, "Output",ExpressionUUID->"87e85a5f-d437-4b49-8d7e-fe79e3d447dd",
+Cell[8195, 134, 15936, 291, 508, "Output",ExpressionUUID->"b0a656d3-de4f-4fa3-8493-8c0f15f00c8c",
+ CellTags->"Subroutines"],
+Cell[24134, 427, 374, 8, 24, "Message",ExpressionUUID->"f04d1c6c-bc5b-4fb2-b8bf-61e3f7344b85",
  CellTags->"Subroutines"]
 }, Open  ]]
 }
 ]
 *)
 
-(* End of internal cache information *)
-
-(* NotebookSignature jV#4OIawMdQ1QXzssKBLFz8a *)
+(* NotebookSignature ZVktrs8wYQaLaUzOoyjv45ot *)

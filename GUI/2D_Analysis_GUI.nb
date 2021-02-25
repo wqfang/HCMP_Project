@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     25047,        463]
-NotebookOptionsPosition[     24050,        430]
-NotebookOutlinePosition[     24866,        458]
-CellTagsIndexPosition[     24792,        453]
+NotebookDataLength[     25097,        463]
+NotebookOptionsPosition[     24100,        430]
+NotebookOutlinePosition[     24916,        458]
+CellTagsIndexPosition[     24842,        453]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -24,7 +24,7 @@ Cell[BoxData[
  RowBox[{"Get", "@", 
   RowBox[{
   "URLDownload", "[", 
-   "\"\<https://raw.githubusercontent.com/wqfang/HCMP_Project/master/src/GUI2.\
+   "\"\<https://raw.githubusercontent.com/wqfang/HCMP_Project/master/src/GUI3.\
 wl\>\"", "]"}]}]], "Input",
  ShowCellBracket->False,
  CellOpen->False,
@@ -114,10 +114,10 @@ wl\>\"", "]"}]}]], "Input",
    3.797624202460401*^9, 3.797624270779847*^9}, {3.797624432714377*^9, 
    3.797624435798129*^9}, {3.797624756060416*^9, 3.7976247661380873`*^9}, {
    3.797767441988985*^9, 3.7977674883002357`*^9}, {3.797767559408841*^9, 
-   3.797767560037642*^9}},
+   3.797767560037642*^9}, {3.823278253029213*^9, 3.8232782531206827`*^9}},
  Background->GrayLevel[1],
- CellTags->"Subroutines",
- CellLabel->"In[1]:=",ExpressionUUID->"8841a066-2333-45df-a981-fcca830a398c"],
+ CellTags->
+  "Subroutines",ExpressionUUID->"8841a066-2333-45df-a981-fcca830a398c"],
 
 Cell[BoxData[
  TagBox[
@@ -423,9 +423,9 @@ $CellContext`EEDensityList, $CellContext`EEList];
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.800788000039022*^9},
+ CellChangeTimes->{3.800788000039022*^9, 3.823278240253126*^9},
  CellTags->"Subroutines",
- CellLabel->"Out[1]=",ExpressionUUID->"f2472557-ff20-4ba0-865a-d2b18d02e262"]
+ CellLabel->"Out[3]=",ExpressionUUID->"1a606e61-1f9f-4dad-a2a5-88bc9a6e6a49"]
 }, Open  ]]
 },
 InitializationCellEvaluation->True,
@@ -442,27 +442,27 @@ ExpressionUUID->"7b87bb52-5c85-4ecf-9046-730221ab0eac"
 (*CellTagsOutline
 CellTagsIndex->{
  "Subroutines"->{
-  Cell[580, 22, 6658, 97, 19, "Input",ExpressionUUID->"8841a066-2333-45df-a981-fcca830a398c",
+  Cell[580, 22, 6686, 97, 19, "Input",ExpressionUUID->"8841a066-2333-45df-a981-fcca830a398c",
    CellOpen->False,
    InitializationCell->True,
    CellTags->"Subroutines"],
-  Cell[7241, 121, 16793, 306, 447, "Output",ExpressionUUID->"f2472557-ff20-4ba0-865a-d2b18d02e262",
+  Cell[7269, 121, 16815, 306, 470, "Output",ExpressionUUID->"1a606e61-1f9f-4dad-a2a5-88bc9a6e6a49",
    CellTags->"Subroutines"]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Subroutines", 24467, 443}
+ {"Subroutines", 24517, 443}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 6658, 97, 19, "Input",ExpressionUUID->"8841a066-2333-45df-a981-fcca830a398c",
+Cell[580, 22, 6686, 97, 19, "Input",ExpressionUUID->"8841a066-2333-45df-a981-fcca830a398c",
  CellOpen->False,
  InitializationCell->True,
  CellTags->"Subroutines"],
-Cell[7241, 121, 16793, 306, 447, "Output",ExpressionUUID->"f2472557-ff20-4ba0-865a-d2b18d02e262",
+Cell[7269, 121, 16815, 306, 470, "Output",ExpressionUUID->"1a606e61-1f9f-4dad-a2a5-88bc9a6e6a49",
  CellTags->"Subroutines"]
 }, Open  ]]
 }
