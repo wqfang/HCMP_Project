@@ -39,19 +39,19 @@ In the `GUI` folder, we provide three Wolfram Computable Document Format (**CDF*
 - __2D_Analysis_GUI.cdf__: the GUI for processing massive data in parallel using spherically symmetric continuum mechanics approximation.
 
 ### HCMP_GUI
-![](images/ScreeShot_GUI1.png)
+![Loading](images/ScreeShot_GUI1.png)
 
 __HCMP_GUI.cdf__ works on one pair of HCMP configurations. It will plot the point cloud and fitting surface of both one non-deformed HCMP and one deformed HCMP. By using the linear theory of elasticity, the HCMP's stress field is determined through finite element analysis.
 It will plot the traction vectors on the deformed configuration of the HCMP's surface. The normal component of the traction vector (normal traction component) at a large number of HCMP surface points are recorded. The distributions of the normal traction component data will be shown as colormap on the deformed configuration of the HCMP's surface as well as a histogram plot. Radius, volume, average pressures (one third the trace of the stress tensor), elastic energy density and total elastic energy stored within the HCMP will be calculated.
 
 ### ParallelProcessing_GUI
-![](images/ScreeShot_GUI2.png)
+![Loading](images/ScreeShot_GUI2.png)
 
 __ParallelProcessing_GUI.cdf__ works for processing massive data set. It performs all image processing and finite element calculations in parallel in one click. In order to use it, you need to put your images in a specific directory structure and rename all file and directory names following the given patterns (see <a href="#requirement-on-working-directory-structure-and-filedirectory-names">Requirement on working directory structure and file/directory names</a>).
 
 
 ### 2D_Analysis_GUI
-![](images/ScreeShot_GUI3.png)
+![Loading](images/ScreeShot_GUI3.png)
 
 __2D_Analysis_GUI.cdf__ works for processing massive 2D Projection image data set. It performs all image processing and 2D calculations in parallel in one click. The 2D calculations are performed by assuming that the deformed particle is spherically symmetric so that analytical solutions are available through continuum mechanics analysis.
 
@@ -68,11 +68,11 @@ https://www.wolfram.com/player
 
 Taking **MacOS** for example, after you open the downloaded `WolframPlayer_12.1.1_MAC_DLM` file, you should be able to see
 
-![](images/DownloadManager.png)
+![Loading](images/DownloadManager.png)
 
 After it is finished, you need to launch the installation package and it will show
 
-![](images/Installation.png)
+![Loading](images/Installation.png)
 
 When this is done, you can drag the Wolfram Player icon to the `Applications` folder to complete installation.
 
@@ -81,11 +81,11 @@ When this is done, you can drag the Wolfram Player icon to the `Applications` fo
 
 On the top-right corner of this page, you will see a green button **⤓ Code**. Clicking on it, you will find the option to **Download ZIP** of the whole project.
 
-![](images/DownloadApp.png)
+![Loading](images/DownloadApp.png)
 
 You need to unzip the file. Inside the resulted folder, you will find the main file `HCMP_GUI.cdf`, `ParallelProcessing_GUI.cdf`, and `2D_Analysis_GUI.cdf` in folder `GUI`, open it with [Wolfram Player](https://www.wolfram.com/player/). Upon opening any of the files, you may see a pop-up window as shown in the following screenshot. Click on **Yes**.
 
-![](images/Initialization.png)
+![Loading](images/Initialization.png)
 
 After you have done all the above steps correctly, A user-interface will show up in the opened file as the screenshots shown in <a href="#introduction">Introduction</a>.
 
@@ -101,7 +101,7 @@ In the next step, clicking on buttons `Perform Finite Element Calculation`, the 
 
 Finally, in case the default settings do not give you great result or you are using particles with different mechanical properties, try to tune the parameters in Parameter Palette, which can be opened by clicking on button `Open Parameter Palette`. The Parameter Palette is shown as
 
-![](images/Palette1.png)
+![Loading](images/Palette1.png)
 
 The change of any parameter won't be effective immediately. You have to re-run the commands in the main GUI to visualize the changes in the output result.
 
@@ -115,7 +115,7 @@ Then, clicking on `Perform Finite Element Calculation`, the program will be runn
 
 In case the default settings do not give you great result, try to tune the parameters in Parameter Palette, which can be opened by clicking on button `Open Parameter Palette`. The Parameter Palette is shown as
 
-![](images/Palette2.png)
+![Loading](images/Palette2.png)
 
 The change of any parameter won't be effective immediately. You have to re-run the commands in the main GUI to visualize the changes in the output result.
 
@@ -129,7 +129,7 @@ Then, clicking on `Perform 2D Calculation`, the program will be running in the b
 
 In case the default settings do not give you great result, try to tune the parameters in Parameter Palette, which can be opened by clicking on button `Open Parameter Palette`. The Parameter Palette is shown as
 
-![](images/Palette3.png)
+![Loading](images/Palette3.png)
 
 The change of any parameter won't be effective immediately. You have to re-run the commands in the main GUI to visualize the changes in the output result.
 
@@ -139,12 +139,12 @@ In order to use **ParallelProcessing_GUI** and **2D_Analysis_GUI**, you need to 
 
 #### ParallelProcessing_GUI
 
-![](images/DirectoryStructure3D.png)
+![Loading](images/DirectoryStructure3D.png)
 
 #### 2D_Analysis_GUI
 
 
-![](images/DirectoryStructure2D.png)
+![Loading](images/DirectoryStructure2D.png)
 
 
 
